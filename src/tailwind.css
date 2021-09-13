@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .primary-btn {
+    @apply px-8 py-2 text-xl font-semibold text-white transition-all duration-200 bg-gray-300 shadow-lg outline-none md:py-3 md:text-2xl rounded-xl bg-gradient-to-r from-btn-gradient-start to-btn-gradient-stop hover:-translate-y-2 hover:shadow-xl focus:ring-2 ring-text-brand;
+  }
+
+  .secondary-btn {
+    @apply py-4 text-xl font-medium text-text-secondary hover:border-b-2 hover:border-text-primary hover:text-text-primary;
+  }
+
+  .planet {
+    @apply absolute w-16 h-16 rounded-full cursor-pointer shadow-inner-planet bg-planet lg:w-20 lg:h-20;
+  }
+
+  .tooltip {
+    @apply absolute invisible;
+  }
+
+  .has-tooltip:hover .tooltip {
+    @apply z-50 visible;
+  }
+
+  .activeLink {
+    @apply border-b-4 border-text-brand text-btn-gradient-stop;
+  }
+}
