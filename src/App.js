@@ -8,6 +8,7 @@ import Careers from './components/pages/Careers';
 import BlogDetails from './components/pages/BlogDetails';
 import CareerDetails from './components/pages/CareerDetails';
 import ServicesPage from './components/pages/ServicesPage';
+import OurWork from './components/pages/OurWork';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact path='/' component={HomePage} />
         <Route exact path='/about' component={AboutUsPage} />
         <Route exact path='/services' component={ServicesPage} />
+        <Route exact path='/our-work' component={OurWork} />
         <Route exact path='/contact' component={ContactPage} />
         <Route exact path='/blogs' component={BlogPage} />
         <Route exact path='/blogDetails' component={BlogDetails} />
